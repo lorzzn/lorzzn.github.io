@@ -117,6 +117,32 @@
       </tags>
   </entry>
   <entry>
+    <title>parallels虚拟机试用过期后重新申请14天试用</title>
+    <url>/p/d16502d.html</url>
+    <content><![CDATA[<p>我pd17上的win10突然不能联网了，因为这个win10虚拟机上没有什么重要文件，所以我删除了它，打算再新建一个win10虚拟机看看能不能解决问题。由于我的pd17是无限试用版，在我新建完一个新的win10虚拟机后，它提醒我试用到期了，PD Runner也不能用了。</p>
+<span id="more"></span>
+
+<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/a323e14f708a143e39b6a0e26b999fe9/20230318171804.png" alt="a323e14f708a143e39b6a0e26b999fe9/20230318171804.png"></p>
+<p>难道我的电脑只能付费了吗？奈何我贫苦大学生一个，囊中羞涩，暂时拿不出购买pd许可证的钱，如果资金允许还是可以考虑购买许可证支持一下pd。没办法，我尝试了卸载重装，不行，尝试安装pd16报错了，应该是pd16不支持Monterey，我又尝试了vmware fusion，体验后感觉vm性能实在太差，根本不能和pd比。</p>
+<p>在几番尝试无果后，最后祭出大招！研究了pd申请试用的规则后，发现它的试用应该是和mac序列号有关，我的电脑是黑苹果，更换序列号很简单，然后我就 打开了OpenCore Configurator，打开oc引导的config文件</p>
+<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/fbac7364e8da9fcd0d20099f208ce50f/20230318171916.png" alt="fbac7364e8da9fcd0d20099f208ce50f/20230318171916.png"></p>
+<p>根据上面的步骤，第3步点击后选择与原来相同的机型，就可以生成一个新的序列号</p>
+<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/1f627a5bbe4b29588517caa947b092c1/20230318171948.png" alt="1f627a5bbe4b29588517caa947b092c1/20230318171948.png"></p>
+<p>检查生成的序列号有没有被使用，选择一个没有被使用的序列号，然后把ProcessorType改成0</p>
+<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/8bce4c0558044c37034f018a5361a2ef/20230318172024.png" alt="8bce4c0558044c37034f018a5361a2ef/20230318172024.png"></p>
+<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/94bced8e7367e50ce6b0c8d83feac33a/20230318172044.png" alt="94bced8e7367e50ce6b0c8d83feac33a/20230318172044.png"></p>
+<p>command+s保存，为了保险起见我把pd17先卸载了，然后重启电脑再重新安装pd17，我又重新注册了一个pd账号，登录后又可以申请试用了！</p>
+<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/2f146a0ec2636ebad0d81176ce00bcfe/20230318172104.png" alt="2f146a0ec2636ebad0d81176ce00bcfe/20230318172104.png"></p>
+<p>注意更换序列号之后iCloud和AppStore需要重新登录，一些付费软件可能也要重新激活。</p>
+]]></content>
+      <categories>
+        <category>macos</category>
+      </categories>
+      <tags>
+        <tag>macos</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Clion 插件 &quot;C/C++ Single File Execution&quot; 修复cmake报错</title>
     <url>/p/9e023dbf.html</url>
     <content><![CDATA[<p>发现clion也有leetcode插件，终于不用苦于配置vscode的C++ debug环境了，当我在Clion上安装好leetcode插件做题时发现本地调试成了问题，不会只能提交leetcode评测吧，这样还不如在网页端打开leetcode，再用CodeRunner了</p>
@@ -146,32 +172,6 @@
       <tags>
         <tag>C++</tag>
         <tag>Clion插件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>parallels虚拟机试用过期后重新申请14天试用</title>
-    <url>/p/d16502d.html</url>
-    <content><![CDATA[<p>我pd17上的win10突然不能联网了，因为这个win10虚拟机上没有什么重要文件，所以我删除了它，打算再新建一个win10虚拟机看看能不能解决问题。由于我的pd17是无限试用版，在我新建完一个新的win10虚拟机后，它提醒我试用到期了，PD Runner也不能用了。</p>
-<span id="more"></span>
-
-<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/a323e14f708a143e39b6a0e26b999fe9/20230318171804.png" alt="a323e14f708a143e39b6a0e26b999fe9/20230318171804.png"></p>
-<p>难道我的电脑只能付费了吗？奈何我贫苦大学生一个，囊中羞涩，暂时拿不出购买pd许可证的钱，如果资金允许还是可以考虑购买许可证支持一下pd。没办法，我尝试了卸载重装，不行，尝试安装pd16报错了，应该是pd16不支持Monterey，我又尝试了vmware fusion，体验后感觉vm性能实在太差，根本不能和pd比。</p>
-<p>在几番尝试无果后，最后祭出大招！研究了pd申请试用的规则后，发现它的试用应该是和mac序列号有关，我的电脑是黑苹果，更换序列号很简单，然后我就 打开了OpenCore Configurator，打开oc引导的config文件</p>
-<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/fbac7364e8da9fcd0d20099f208ce50f/20230318171916.png" alt="fbac7364e8da9fcd0d20099f208ce50f/20230318171916.png"></p>
-<p>根据上面的步骤，第3步点击后选择与原来相同的机型，就可以生成一个新的序列号</p>
-<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/1f627a5bbe4b29588517caa947b092c1/20230318171948.png" alt="1f627a5bbe4b29588517caa947b092c1/20230318171948.png"></p>
-<p>检查生成的序列号有没有被使用，选择一个没有被使用的序列号，然后把ProcessorType改成0</p>
-<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/8bce4c0558044c37034f018a5361a2ef/20230318172024.png" alt="8bce4c0558044c37034f018a5361a2ef/20230318172024.png"></p>
-<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/94bced8e7367e50ce6b0c8d83feac33a/20230318172044.png" alt="94bced8e7367e50ce6b0c8d83feac33a/20230318172044.png"></p>
-<p>command+s保存，为了保险起见我把pd17先卸载了，然后重启电脑再重新安装pd17，我又重新注册了一个pd账号，登录后又可以申请试用了！</p>
-<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/2f146a0ec2636ebad0d81176ce00bcfe/20230318172104.png" alt="2f146a0ec2636ebad0d81176ce00bcfe/20230318172104.png"></p>
-<p>注意更换序列号之后iCloud和AppStore需要重新登录，一些付费软件可能也要重新激活。</p>
-]]></content>
-      <categories>
-        <category>macos</category>
-      </categories>
-      <tags>
-        <tag>macos</tag>
       </tags>
   </entry>
   <entry>
@@ -697,29 +697,6 @@
       </tags>
   </entry>
   <entry>
-    <title>nmcli创建wifi热点</title>
-    <url>/p/cfacc943.html</url>
-    <content><![CDATA[<!--article-->
-
-<p>nmcli 命令是在 Linux 命令行操作 NetworkManager 的工具。它是 NetworkManager 软件包集成的一部分，通过使用一些 应用程序接口（API）来操作 NetworkManager 。nmcli 发布于 2010 年，用以替代其他配置网络接口和连接的方法。nmcli可以实现连接wifi，也可以实现创建wifi热点的功能。</p>
-<span id="more"></span>
-
-<h3 id="获取wifi设备"><a href="#获取wifi设备" class="headerlink" title="获取wifi设备"></a>获取wifi设备</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ip <span class="built_in">link</span></span><br><span class="line">1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1</span><br><span class="line">    <span class="built_in">link</span>/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00</span><br><span class="line">2: bond0: &lt;BROADCAST,MULTICAST,MASTER&gt; mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000</span><br><span class="line">    <span class="built_in">link</span>/ether 4a:1f:02:96:f1:67 brd ff:ff:ff:ff:ff:ff</span><br><span class="line">3: dummy0: &lt;BROADCAST,NOARP&gt; mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000</span><br><span class="line">    <span class="built_in">link</span>/ether 46:c1:25:c8:93:ca brd ff:ff:ff:ff:ff:ff</span><br><span class="line">4: eth0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP mode DEFAULT group default qlen 1000</span><br><span class="line">    <span class="built_in">link</span>/ether 00:11:22:33:44:55 brd ff:ff:ff:ff:ff:ff</span><br><span class="line">5: wlan0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc mq state DOWN mode DORMANT group default qlen 1000</span><br><span class="line">    <span class="built_in">link</span>/ether 84:21:f1:97:35:5f brd ff:ff:ff:ff:ff:ff</span><br><span class="line">6: p2p0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc mq state DOWN mode DORMANT group default qlen 1000</span><br><span class="line">    <span class="built_in">link</span>/ether 86:21:f1:97:35:5f brd ff:ff:ff:ff:ff:ff</span><br><span class="line">7: docker0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default</span><br><span class="line">    <span class="built_in">link</span>/ether 02:42:b9:d4:2b:72 brd ff:ff:ff:ff:ff:ff</span><br></pre></td></tr></table></figure>
-
-<p>其中wlan0是我的wifi设备</p>
-<h3 id="创建热点"><a href="#创建热点" class="headerlink" title="创建热点"></a>创建热点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 分别配置热点设备、名称、密码，然后创建新热点配置</span></span><br><span class="line">IFNAME=<span class="string">&quot;wlan0&quot;</span>; CON_NAME=<span class="string">&quot;linux-ap&quot;</span>; CON_PASSWORD=<span class="string">&quot;password&quot;</span></span><br><span class="line">nmcli con add <span class="built_in">type</span> wifi ifname <span class="variable">$IFNAME</span> con-name <span class="variable">$CON_NAME</span> autoconnect <span class="built_in">yes</span> ssid <span class="variable">$CON_NAME</span></span><br><span class="line"><span class="comment"># 将连接方法设置为共享</span></span><br><span class="line">nmcli con modify <span class="variable">$CON_NAME</span> 802-11-wireless.mode ap 802-11-wireless.band <span class="built_in">bg</span> ipv4.method shared</span><br><span class="line"><span class="comment"># 设置热点密码</span></span><br><span class="line">nmcli con modify <span class="variable">$CON_NAME</span> wifi-sec.key-mgmt wpa-psk</span><br><span class="line">nmcli con modify <span class="variable">$CON_NAME</span> wifi-sec.psk <span class="variable">$CON_PASSWORD</span></span><br><span class="line"><span class="comment"># 启动热点</span></span><br><span class="line">nmcli con up <span class="variable">$CON_NAME</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-        <tag>nmcli</tag>
-        <tag>wifi</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>使用nginx反向代理，实现windows主机直接访问WSL2中docker容器的bridge网络</title>
     <url>/p/506c1f25.html</url>
     <content><![CDATA[<p>wsl2中的网络映射到了localhost，也就是说在win上可以使用localhost:port访问到wsl2上的端口。但是wsl2中docker却存在问题，不能通过主机直接访问使用bridge桥接网络的容器内网ip，必须用docker映射端口后访问，这并非bug，因为wls2实质为虚拟机，不过这多少有些不便。如果容器使用host网络就没有这些问题了，可以直接通过localhost:port访问容器内端口。</p>
@@ -759,6 +736,29 @@
         <tag>linux</tag>
         <tag>docker</tag>
         <tag>wsl2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>nmcli创建wifi热点</title>
+    <url>/p/cfacc943.html</url>
+    <content><![CDATA[<!--article-->
+
+<p>nmcli 命令是在 Linux 命令行操作 NetworkManager 的工具。它是 NetworkManager 软件包集成的一部分，通过使用一些 应用程序接口（API）来操作 NetworkManager 。nmcli 发布于 2010 年，用以替代其他配置网络接口和连接的方法。nmcli可以实现连接wifi，也可以实现创建wifi热点的功能。</p>
+<span id="more"></span>
+
+<h3 id="获取wifi设备"><a href="#获取wifi设备" class="headerlink" title="获取wifi设备"></a>获取wifi设备</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ip <span class="built_in">link</span></span><br><span class="line">1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1</span><br><span class="line">    <span class="built_in">link</span>/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00</span><br><span class="line">2: bond0: &lt;BROADCAST,MULTICAST,MASTER&gt; mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000</span><br><span class="line">    <span class="built_in">link</span>/ether 4a:1f:02:96:f1:67 brd ff:ff:ff:ff:ff:ff</span><br><span class="line">3: dummy0: &lt;BROADCAST,NOARP&gt; mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000</span><br><span class="line">    <span class="built_in">link</span>/ether 46:c1:25:c8:93:ca brd ff:ff:ff:ff:ff:ff</span><br><span class="line">4: eth0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP mode DEFAULT group default qlen 1000</span><br><span class="line">    <span class="built_in">link</span>/ether 00:11:22:33:44:55 brd ff:ff:ff:ff:ff:ff</span><br><span class="line">5: wlan0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc mq state DOWN mode DORMANT group default qlen 1000</span><br><span class="line">    <span class="built_in">link</span>/ether 84:21:f1:97:35:5f brd ff:ff:ff:ff:ff:ff</span><br><span class="line">6: p2p0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc mq state DOWN mode DORMANT group default qlen 1000</span><br><span class="line">    <span class="built_in">link</span>/ether 86:21:f1:97:35:5f brd ff:ff:ff:ff:ff:ff</span><br><span class="line">7: docker0: &lt;NO-CARRIER,BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default</span><br><span class="line">    <span class="built_in">link</span>/ether 02:42:b9:d4:2b:72 brd ff:ff:ff:ff:ff:ff</span><br></pre></td></tr></table></figure>
+
+<p>其中wlan0是我的wifi设备</p>
+<h3 id="创建热点"><a href="#创建热点" class="headerlink" title="创建热点"></a>创建热点</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 分别配置热点设备、名称、密码，然后创建新热点配置</span></span><br><span class="line">IFNAME=<span class="string">&quot;wlan0&quot;</span>; CON_NAME=<span class="string">&quot;linux-ap&quot;</span>; CON_PASSWORD=<span class="string">&quot;password&quot;</span></span><br><span class="line">nmcli con add <span class="built_in">type</span> wifi ifname <span class="variable">$IFNAME</span> con-name <span class="variable">$CON_NAME</span> autoconnect <span class="built_in">yes</span> ssid <span class="variable">$CON_NAME</span></span><br><span class="line"><span class="comment"># 将连接方法设置为共享</span></span><br><span class="line">nmcli con modify <span class="variable">$CON_NAME</span> 802-11-wireless.mode ap 802-11-wireless.band <span class="built_in">bg</span> ipv4.method shared</span><br><span class="line"><span class="comment"># 设置热点密码</span></span><br><span class="line">nmcli con modify <span class="variable">$CON_NAME</span> wifi-sec.key-mgmt wpa-psk</span><br><span class="line">nmcli con modify <span class="variable">$CON_NAME</span> wifi-sec.psk <span class="variable">$CON_PASSWORD</span></span><br><span class="line"><span class="comment"># 启动热点</span></span><br><span class="line">nmcli con up <span class="variable">$CON_NAME</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>nmcli</tag>
+        <tag>wifi</tag>
       </tags>
   </entry>
   <entry>
@@ -874,32 +874,6 @@
       </tags>
   </entry>
   <entry>
-    <title>更改Windows上cmd的默认编码为UTF-8</title>
-    <url>/p/1cfca78e.html</url>
-    <content><![CDATA[<p>在Windows上，大部分应用的编码格式都已经统一为utf-8，utf-8也已经是我们常用的字符编码，但是我使用cmd时，却发现cmd的编码格式还是gbk，导致cmd运行程序时经常会出现乱码，怎么修改cmd默认编码格式呢？</p>
-<span id="more"></span>
-
-<p>搜了一下解决方案，大致有以下几种：</p>
-<ol>
-<li><p>cmd启动时自动运行指令<code>chcp 65001</code></p>
-<p>打开注册表并前往地址：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor，然后“右键-新建”，选择“字符串值”，“名称”列填写“autorun”, 数值数据填写“chcp 65001”。</p>
-</li>
-<li><p>启用系统utf-8支持</p>
-<p>这是我采用的方法，这个方法是官方提供的方法，感觉会更为安全。步骤如下：</p>
-<p>打开设置 ==&gt; 时间与语言 ==&gt; 语言与区域 ==&gt; 管理语言设置 ==&gt; 更改系统区域设置</p>
-<p>这时能看到下方有一个 <code>Beta版：使用Unicode UTF-8...</code> 的选框，勾选上然后确定，重启就可以了。</p>
-</li>
-</ol>
-<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/c07af0e7bb9a362d60f8470bc665c20b/20230321171237.png" alt="c07af0e7bb9a362d60f8470bc665c20b/20230321171237.png"></p>
-]]></content>
-      <categories>
-        <category>windows</category>
-      </categories>
-      <tags>
-        <tag>windows</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>解决Windows下python2报错&quot;LookupError:unknown encoding:cp65001&quot;</title>
     <url>/p/89d31abd.html</url>
     <content><![CDATA[<p>我是使用scoop安装的python2，版本如下：</p>
@@ -930,6 +904,32 @@
       </categories>
       <tags>
         <tag>python2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>更改Windows上cmd的默认编码为UTF-8</title>
+    <url>/p/1cfca78e.html</url>
+    <content><![CDATA[<p>在Windows上，大部分应用的编码格式都已经统一为utf-8，utf-8也已经是我们常用的字符编码，但是我使用cmd时，却发现cmd的编码格式还是gbk，导致cmd运行程序时经常会出现乱码，怎么修改cmd默认编码格式呢？</p>
+<span id="more"></span>
+
+<p>搜了一下解决方案，大致有以下几种：</p>
+<ol>
+<li><p>cmd启动时自动运行指令<code>chcp 65001</code></p>
+<p>打开注册表并前往地址：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Command Processor，然后“右键-新建”，选择“字符串值”，“名称”列填写“autorun”, 数值数据填写“chcp 65001”。</p>
+</li>
+<li><p>启用系统utf-8支持</p>
+<p>这是我采用的方法，这个方法是官方提供的方法，感觉会更为安全。步骤如下：</p>
+<p>打开设置 ==&gt; 时间与语言 ==&gt; 语言与区域 ==&gt; 管理语言设置 ==&gt; 更改系统区域设置</p>
+<p>这时能看到下方有一个 <code>Beta版：使用Unicode UTF-8...</code> 的选框，勾选上然后确定，重启就可以了。</p>
+</li>
+</ol>
+<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/c07af0e7bb9a362d60f8470bc665c20b/20230321171237.png" alt="c07af0e7bb9a362d60f8470bc665c20b/20230321171237.png"></p>
+]]></content>
+      <categories>
+        <category>windows</category>
+      </categories>
+      <tags>
+        <tag>windows</tag>
       </tags>
   </entry>
   <entry>
