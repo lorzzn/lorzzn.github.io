@@ -799,27 +799,6 @@
       </tags>
   </entry>
   <entry>
-    <title>修改 WSL2 容器的位置</title>
-    <url>/p/ce4a8fcc.html</url>
-    <content><![CDATA[<p>默认情况WSL2 容器可能在C盘上，时间久了文件可以越来越大，占用很多C盘分区，于是最好把它挪到其他空间更大，更好管理的硬盘或分区上，下面介绍一种移动wsl2容器位置的方法</p>
-<span id="more"></span>
-
-<p>在powershell中使用<code>wsl -l -v</code>查看所有容器，确定你想移动的wsl2</p>
-<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/6cb0c41119c59efdf64ba8bed65884c4/20230318172635.png" alt="6cb0c41119c59efdf64ba8bed65884c4/20230318172635.png"></p>
-<p>使用wsl –shutdown关闭wsl所有容器，或wsl -t <em>name</em> 终止你要移动的容器</p>
-<p>打开windows注册表，打开路径</p>
-<p><code>计算机\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lxss</code></p>
-<p>其中的每一个项就是你的一个容器，可以通过项的 <strong>DistributionName</strong> 确定你要移动的容器，其中 <strong>BasePath</strong> 就是容器文件保存的路径，你可以通过该路径找到容器文件，把他移动到其他地方，然后把 <strong>BasePath</strong> 修改为你移动后存放容器文件的文件夹即可，比如<code>D:\WSL\Distrod-Ubuntu</code>，然后就完成了。</p>
-<p>你也可以修改该项中的其他值来修改wsl2容器的信息，比如 <strong>DefaultUid</strong> - 默认用户id， <strong>DistributionName</strong> - 容器名称</p>
-]]></content>
-      <categories>
-        <category>wsl2</category>
-      </categories>
-      <tags>
-        <tag>wsl2</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>华为悦盒EC6108V9C(hi3798mv100_hi3798mdmo1g)刷入debian9</title>
     <url>/p/848060e4.html</url>
     <content><![CDATA[<p>首先非常非常感谢海思机顶盒NAS社区teasiu大佬的盒子ubuntu nas（海纳思）系统，我的系统完全基于其开发。强烈推荐新手和小白刷teasiu大佬的系统，我的仅供参考和学习。</p>
@@ -874,6 +853,27 @@
       </tags>
   </entry>
   <entry>
+    <title>修改 WSL2 容器的位置</title>
+    <url>/p/ce4a8fcc.html</url>
+    <content><![CDATA[<p>默认情况WSL2 容器可能在C盘上，时间久了文件可以越来越大，占用很多C盘分区，于是最好把它挪到其他空间更大，更好管理的硬盘或分区上，下面介绍一种移动wsl2容器位置的方法</p>
+<span id="more"></span>
+
+<p>在powershell中使用<code>wsl -l -v</code>查看所有容器，确定你想移动的wsl2</p>
+<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/6cb0c41119c59efdf64ba8bed65884c4/20230318172635.png" alt="6cb0c41119c59efdf64ba8bed65884c4/20230318172635.png"></p>
+<p>使用wsl –shutdown关闭wsl所有容器，或wsl -t <em>name</em> 终止你要移动的容器</p>
+<p>打开windows注册表，打开路径</p>
+<p><code>计算机\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Lxss</code></p>
+<p>其中的每一个项就是你的一个容器，可以通过项的 <strong>DistributionName</strong> 确定你要移动的容器，其中 <strong>BasePath</strong> 就是容器文件保存的路径，你可以通过该路径找到容器文件，把他移动到其他地方，然后把 <strong>BasePath</strong> 修改为你移动后存放容器文件的文件夹即可，比如<code>D:\WSL\Distrod-Ubuntu</code>，然后就完成了。</p>
+<p>你也可以修改该项中的其他值来修改wsl2容器的信息，比如 <strong>DefaultUid</strong> - 默认用户id， <strong>DistributionName</strong> - 容器名称</p>
+]]></content>
+      <categories>
+        <category>wsl2</category>
+      </categories>
+      <tags>
+        <tag>wsl2</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>更改Windows上cmd的默认编码为UTF-8</title>
     <url>/p/1cfca78e.html</url>
     <content><![CDATA[<p>在Windows上，大部分应用的编码格式都已经统一为utf-8，utf-8也已经是我们常用的字符编码，但是我使用cmd时，却发现cmd的编码格式还是gbk，导致cmd运行程序时经常会出现乱码，怎么修改cmd默认编码格式呢？</p>
@@ -897,6 +897,36 @@
       </categories>
       <tags>
         <tag>windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决idea不能使用Gnome全局菜单插件Fildem的BUG</title>
+    <url>/p/bdb488db.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在开始之前，我必须先发发牢骚，这真是个神奇的bug，fildem在其他软件下都很好用，唯独idea家族软件（比如clion，intellij）下就有这个bug，用着也是比较难受，刚开始我是配合idea下的一个插件<a href="https://plugins.jetbrains.com/plugin/7297-main-menu-toggler">Main Menu toggler</a> 打开原始顶部菜单来使用的，但是这就出现了双层菜单（话说上面的不能用就别显示啊，这样看着更加难受😭）</p>
+<span id="more"></span>
+
+<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/d86484ffec0994b4211ad701f12f7217/20230321170646.png" alt="d86484ffec0994b4211ad701f12f7217/20230321170646.png"></p>
+<p><em><strong>（双层菜单）</strong></em></p>
+<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/702eb9ddd899a9324a8d6ff03d427475/20230321170710.png" alt="702eb9ddd899a9324a8d6ff03d427475/20230321170710.png"></p>
+<p>双层菜单用着实在不爽，于是我搜了一圈解决方案，都不太好用（只能自己研究解决方案了）</p>
+<h2 id="解决过程"><a href="#解决过程" class="headerlink" title="解决过程"></a>解决过程</h2><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>去<a href="https://github.com/gonzaarcr/Fildem">Github - Fildem</a> fork了一份代码，作者已经在上一个release版本后提交了很多代码，我有点小激动，这个bug是不是已经被修复了呢？我赶紧把源代码的版本安装上试了试，结果很失望，bug依然存在，而且更失望的是，源代码使用treelib库存放菜单元素，导致基于gtk的软件没有全局菜单了（由于重复键值的存在），本来是正常使用的。我把代码回退到作者添加treelib库之前</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git reset --hard 853a367cdc0337b2ddcc5d5a39028b64079571e6 </span><br></pre></td></tr></table></figure>
+
+<p>就正常了，然后解决idea的问题，修改一下代码解决<a href="https://github.com/gonzaarcr/Fildem/issues/108#">issues#108 Crash after click on PHPStorm navbar</a> , idea系列都会有这个问题</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># fildem/handlers/global_menu.py</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">set_menu</span>(<span class="params">self, menus</span>):</span><br><span class="line">    <span class="variable language_">self</span>.destroy_menus()</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(menus) == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">++  <span class="keyword">if</span> <span class="built_in">len</span>(menus[<span class="number">0</span>].path) == <span class="number">0</span>:</span><br><span class="line">++      <span class="keyword">return</span></span><br><span class="line">    current_prefix = menus[<span class="number">0</span>].path[<span class="number">0</span>]</span><br><span class="line">    current_menu = []</span><br></pre></td></tr></table></figure>
+
+<p>加上上面的补丁后，我运行了一下fildem源代码程序，然后打开clion，等待加载完成后菜单居然正常了，我一阵狂喜，这个曾让我头大的问题居然就这么解决了？我把原先的fildem卸载然后安装我修改后的，然后重启电脑，再打开clion，发现全局菜单又失灵了。我真的纳闷了，明明之前运行没问题呀，我又打开源代码再次运行了一边，打开clion，菜单又好了！</p>
+<h3 id="最终解决方案"><a href="#最终解决方案" class="headerlink" title="最终解决方案"></a>最终解决方案</h3><p>我反复折腾了好几遍，结果都和上面一样，最终我发现只要同时运行两个fildem进程（他们是可以共存的），idea系软件的全局菜单就可以正常工作（要按照上面的修改代码），是不是很奇怪！我暂时也不能深入研究原因，反正能用就行😂</p>
+<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><p>可以直接clone我修改好的GitHub - <a href="https://github.com/lorzzn/Fildem">Fildem</a>安装</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 卸载原有版本</span></span><br><span class="line"><span class="built_in">sudo</span> pip uninstall fildem         </span><br><span class="line"><span class="comment"># 进入clone后的代码根目录，安装我修改的版本</span></span><br><span class="line"><span class="built_in">sudo</span> python3 setup.py install --optimize=1   </span><br><span class="line"><span class="comment"># 复制一个fildem开机自启动项目，开机启动两个fildem进程</span></span><br><span class="line"><span class="built_in">cp</span> ~/.config/autostart/fildem.desktop ~/.config/autostart/fildem2.desktop </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h2><p><a href="https://www.linuxuprising.com/2021/02/how-to-install-fildem-global-menu-and.html#">https://www.linuxuprising.com/2021/02/how-to-install-fildem-global-menu-and.html#</a></p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -930,36 +960,6 @@
       </categories>
       <tags>
         <tag>python2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决idea不能使用Gnome全局菜单插件Fildem的BUG</title>
-    <url>/p/bdb488db.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在开始之前，我必须先发发牢骚，这真是个神奇的bug，fildem在其他软件下都很好用，唯独idea家族软件（比如clion，intellij）下就有这个bug，用着也是比较难受，刚开始我是配合idea下的一个插件<a href="https://plugins.jetbrains.com/plugin/7297-main-menu-toggler">Main Menu toggler</a> 打开原始顶部菜单来使用的，但是这就出现了双层菜单（话说上面的不能用就别显示啊，这样看着更加难受😭）</p>
-<span id="more"></span>
-
-<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/d86484ffec0994b4211ad701f12f7217/20230321170646.png" alt="d86484ffec0994b4211ad701f12f7217/20230321170646.png"></p>
-<p><em><strong>（双层菜单）</strong></em></p>
-<p><img src="https://gcore.jsdelivr.net/gh/lorzzn/storage@main/images/picgo/702eb9ddd899a9324a8d6ff03d427475/20230321170710.png" alt="702eb9ddd899a9324a8d6ff03d427475/20230321170710.png"></p>
-<p>双层菜单用着实在不爽，于是我搜了一圈解决方案，都不太好用（只能自己研究解决方案了）</p>
-<h2 id="解决过程"><a href="#解决过程" class="headerlink" title="解决过程"></a>解决过程</h2><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>去<a href="https://github.com/gonzaarcr/Fildem">Github - Fildem</a> fork了一份代码，作者已经在上一个release版本后提交了很多代码，我有点小激动，这个bug是不是已经被修复了呢？我赶紧把源代码的版本安装上试了试，结果很失望，bug依然存在，而且更失望的是，源代码使用treelib库存放菜单元素，导致基于gtk的软件没有全局菜单了（由于重复键值的存在），本来是正常使用的。我把代码回退到作者添加treelib库之前</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git reset --hard 853a367cdc0337b2ddcc5d5a39028b64079571e6 </span><br></pre></td></tr></table></figure>
-
-<p>就正常了，然后解决idea的问题，修改一下代码解决<a href="https://github.com/gonzaarcr/Fildem/issues/108#">issues#108 Crash after click on PHPStorm navbar</a> , idea系列都会有这个问题</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># fildem/handlers/global_menu.py</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">set_menu</span>(<span class="params">self, menus</span>):</span><br><span class="line">    <span class="variable language_">self</span>.destroy_menus()</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(menus) == <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">++  <span class="keyword">if</span> <span class="built_in">len</span>(menus[<span class="number">0</span>].path) == <span class="number">0</span>:</span><br><span class="line">++      <span class="keyword">return</span></span><br><span class="line">    current_prefix = menus[<span class="number">0</span>].path[<span class="number">0</span>]</span><br><span class="line">    current_menu = []</span><br></pre></td></tr></table></figure>
-
-<p>加上上面的补丁后，我运行了一下fildem源代码程序，然后打开clion，等待加载完成后菜单居然正常了，我一阵狂喜，这个曾让我头大的问题居然就这么解决了？我把原先的fildem卸载然后安装我修改后的，然后重启电脑，再打开clion，发现全局菜单又失灵了。我真的纳闷了，明明之前运行没问题呀，我又打开源代码再次运行了一边，打开clion，菜单又好了！</p>
-<h3 id="最终解决方案"><a href="#最终解决方案" class="headerlink" title="最终解决方案"></a>最终解决方案</h3><p>我反复折腾了好几遍，结果都和上面一样，最终我发现只要同时运行两个fildem进程（他们是可以共存的），idea系软件的全局菜单就可以正常工作（要按照上面的修改代码），是不是很奇怪！我暂时也不能深入研究原因，反正能用就行😂</p>
-<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><p>可以直接clone我修改好的GitHub - <a href="https://github.com/lorzzn/Fildem">Fildem</a>安装</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 卸载原有版本</span></span><br><span class="line"><span class="built_in">sudo</span> pip uninstall fildem         </span><br><span class="line"><span class="comment"># 进入clone后的代码根目录，安装我修改的版本</span></span><br><span class="line"><span class="built_in">sudo</span> python3 setup.py install --optimize=1   </span><br><span class="line"><span class="comment"># 复制一个fildem开机自启动项目，开机启动两个fildem进程</span></span><br><span class="line"><span class="built_in">cp</span> ~/.config/autostart/fildem.desktop ~/.config/autostart/fildem2.desktop </span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h2><p><a href="https://www.linuxuprising.com/2021/02/how-to-install-fildem-global-menu-and.html#">https://www.linuxuprising.com/2021/02/how-to-install-fildem-global-menu-and.html#</a></p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1190,13 +1190,13 @@
       </tags>
   </entry>
   <entry>
-    <title>关于我</title>
-    <url>/about/index.html</url>
+    <title>categories</title>
+    <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>categories</title>
-    <url>/categories/index.html</url>
+    <title>关于我</title>
+    <url>/about/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
